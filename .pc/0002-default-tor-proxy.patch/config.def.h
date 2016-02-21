@@ -16,8 +16,8 @@ static int      ipv6        = 0;
 static int      tcp         = 0;
 static int      proxy       = 0;
 static int      proxytype   = 2; /* 1 = HTTP, 2 = SOCKS5 */
-static char     proxyaddr[] = "127.0.0.1";
-static uint16_t proxyport   = 9050;
+static char     proxyaddr[] = "localhost";
+static uint16_t proxyport   = 8080;
 
 static struct node nodes[] = {
 	{

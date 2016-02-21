@@ -1,0 +1,554 @@
+make bin
+make[1]: Entering directory '/home/dyngar/Projects/Distro_OS_Projects/packages/ratox'
+CC ratox.c
+ratox.c:30:4: error: ‘TOX_FAERR_TOOLONG’ undeclared here (not in a function)
+  [-TOX_FAERR_TOOLONG]      = "Message is too long",
+    ^
+ratox.c:30:3: error: array index in initializer not of integer type
+  [-TOX_FAERR_TOOLONG]      = "Message is too long",
+   ^
+ratox.c:30:3: note: (near initialization for ‘reqerr’)
+ratox.c:31:4: error: ‘TOX_FAERR_NOMESSAGE’ undeclared here (not in a function)
+  [-TOX_FAERR_NOMESSAGE]    = "Please add a message to your request",
+    ^
+ratox.c:31:3: error: array index in initializer not of integer type
+  [-TOX_FAERR_NOMESSAGE]    = "Please add a message to your request",
+   ^
+ratox.c:31:3: note: (near initialization for ‘reqerr’)
+ratox.c:32:4: error: ‘TOX_FAERR_OWNKEY’ undeclared here (not in a function)
+  [-TOX_FAERR_OWNKEY]       = "That appears to be your own ID",
+    ^
+ratox.c:32:3: error: array index in initializer not of integer type
+  [-TOX_FAERR_OWNKEY]       = "That appears to be your own ID",
+   ^
+ratox.c:32:3: note: (near initialization for ‘reqerr’)
+ratox.c:33:4: error: ‘TOX_FAERR_ALREADYSENT’ undeclared here (not in a function)
+  [-TOX_FAERR_ALREADYSENT]  = "Friend request already sent",
+    ^
+ratox.c:33:3: error: array index in initializer not of integer type
+  [-TOX_FAERR_ALREADYSENT]  = "Friend request already sent",
+   ^
+ratox.c:33:3: note: (near initialization for ‘reqerr’)
+ratox.c:34:4: error: ‘TOX_FAERR_UNKNOWN’ undeclared here (not in a function)
+  [-TOX_FAERR_UNKNOWN]      = "Unknown error while sending your request",
+    ^
+ratox.c:34:3: error: array index in initializer not of integer type
+  [-TOX_FAERR_UNKNOWN]      = "Unknown error while sending your request",
+   ^
+ratox.c:34:3: note: (near initialization for ‘reqerr’)
+ratox.c:35:4: error: ‘TOX_FAERR_BADCHECKSUM’ undeclared here (not in a function)
+  [-TOX_FAERR_BADCHECKSUM]  = "Bad checksum while verifying address",
+    ^
+ratox.c:35:3: error: array index in initializer not of integer type
+  [-TOX_FAERR_BADCHECKSUM]  = "Bad checksum while verifying address",
+   ^
+ratox.c:35:3: note: (near initialization for ‘reqerr’)
+ratox.c:36:4: error: ‘TOX_FAERR_SETNEWNOSPAM’ undeclared here (not in a function)
+  [-TOX_FAERR_SETNEWNOSPAM] = "Friend already added but invalid nospam",
+    ^
+ratox.c:36:3: error: array index in initializer not of integer type
+  [-TOX_FAERR_SETNEWNOSPAM] = "Friend already added but invalid nospam",
+   ^
+ratox.c:36:3: note: (near initialization for ‘reqerr’)
+ratox.c:37:4: error: ‘TOX_FAERR_NOMEM’ undeclared here (not in a function)
+  [-TOX_FAERR_NOMEM]        = "Error increasing the friend list size"
+    ^
+ratox.c:37:3: error: array index in initializer not of integer type
+  [-TOX_FAERR_NOMEM]        = "Error increasing the friend list size"
+   ^
+ratox.c:37:3: note: (near initialization for ‘reqerr’)
+ratox.c:110:3: error: ‘TOX_USERSTATUS_NONE’ undeclared here (not in a function)
+  [TOX_USERSTATUS_NONE]    = "none",
+   ^
+ratox.c:110:3: error: array index in initializer not of integer type
+ratox.c:110:3: note: (near initialization for ‘ustate’)
+ratox.c:111:3: error: ‘TOX_USERSTATUS_AWAY’ undeclared here (not in a function)
+  [TOX_USERSTATUS_AWAY]    = "away",
+   ^
+ratox.c:111:3: error: array index in initializer not of integer type
+ratox.c:111:3: note: (near initialization for ‘ustate’)
+ratox.c:112:3: error: ‘TOX_USERSTATUS_BUSY’ undeclared here (not in a function)
+  [TOX_USERSTATUS_BUSY]    = "busy",
+   ^
+ratox.c:112:3: error: array index in initializer not of integer type
+ratox.c:112:3: note: (near initialization for ‘ustate’)
+ratox.c:113:3: error: ‘TOX_USERSTATUS_INVALID’ undeclared here (not in a function)
+  [TOX_USERSTATUS_INVALID] = "invalid"
+   ^
+ratox.c:113:3: error: array index in initializer not of integer type
+ratox.c:113:3: note: (near initialization for ‘ustate’)
+ratox.c:140:19: error: ‘RTP_PAYLOAD_SIZE’ undeclared here (not in a function)
+  uint8_t  payload[RTP_PAYLOAD_SIZE];
+                   ^
+ratox.c:148:13: error: ‘TOX_CLIENT_ID_SIZE’ undeclared here (not in a function)
+  uint8_t id[TOX_CLIENT_ID_SIZE];
+             ^
+ratox.c:170:8: error: unknown type name ‘Tox_Options’
+ static Tox_Options toxopt;
+        ^
+ratox.c:172:8: error: unknown type name ‘ToxAv’
+ static ToxAv *toxav;
+        ^
+ratox.c:173:8: error: unknown type name ‘ToxAvCSettings’
+ static ToxAvCSettings toxavconfig;
+        ^
+ratox.c:187:33: error: unknown type name ‘ToxAv’
+ static uint32_t interval(Tox *, ToxAv *);
+                                 ^
+ratox.c:335:18: error: unknown type name ‘ToxAv’
+ interval(Tox *m, ToxAv *av)
+                  ^
+ratox.c: In function ‘cbcallinvite’:
+ratox.c:344:2: error: unknown type name ‘ToxAvCSettings’
+  ToxAvCSettings avconfig;
+  ^
+ratox.c:347:9: warning: implicit declaration of function ‘toxav_get_peer_id’ [-Wimplicit-function-declaration]
+  fnum = toxav_get_peer_id(toxav, cnum, 0);
+         ^
+ratox.c:350:7: warning: implicit declaration of function ‘toxav_reject’ [-Wimplicit-function-declaration]
+   r = toxav_reject(toxav, cnum, NULL);
+       ^
+ratox.c:362:6: warning: implicit declaration of function ‘toxav_get_peer_csettings’ [-Wimplicit-function-declaration]
+  r = toxav_get_peer_csettings(toxav, cnum, 0, &avconfig);
+      ^
+ratox.c:372:26: error: request for member ‘audio_sample_rate’ in something not a structure or union
+         f->name, avconfig.audio_sample_rate, avconfig.audio_channels);
+                          ^
+ratox.c:372:54: error: request for member ‘audio_channels’ in something not a structure or union
+         f->name, avconfig.audio_sample_rate, avconfig.audio_channels);
+                                                      ^
+ratox.c: In function ‘cbcallstart’:
+ratox.c:399:6: warning: implicit declaration of function ‘toxav_prepare_transmission’ [-Wimplicit-function-declaration]
+  r = toxav_prepare_transmission(toxav, f->av.num, 0);
+      ^
+ratox.c:402:7: warning: implicit declaration of function ‘toxav_hangup’ [-Wimplicit-function-declaration]
+   r = toxav_hangup(toxav, f->av.num);
+       ^
+ratox.c: In function ‘cbcallterminate’:
+ratox.c:429:7: warning: implicit declaration of function ‘toxav_stop_call’ [-Wimplicit-function-declaration]
+   r = toxav_stop_call(toxav, cnum);
+       ^
+ratox.c: In function ‘cancelcall’:
+ratox.c:493:7: warning: implicit declaration of function ‘toxav_kill_transmission’ [-Wimplicit-function-declaration]
+   r = toxav_kill_transmission(toxav, f->av.num);
+       ^
+ratox.c: In function ‘sendfriendcalldata’:
+ratox.c:539:16: warning: implicit declaration of function ‘toxav_prepare_audio_frame’ [-Wimplicit-function-declaration]
+  payloadsize = toxav_prepare_audio_frame(toxav, f->av.num,
+                ^
+ratox.c:549:52: error: request for member ‘audio_frame_duration’ in something not a structure or union
+  if (diff.tv_sec == 0 && diff.tv_nsec < toxavconfig.audio_frame_duration * 1E6) {
+                                                    ^
+ratox.c:550:29: error: request for member ‘audio_frame_duration’ in something not a structure or union
+   diff.tv_nsec = toxavconfig.audio_frame_duration * 1E6 - diff.tv_nsec;
+                             ^
+ratox.c:554:6: warning: implicit declaration of function ‘toxav_send_audio’ [-Wimplicit-function-declaration]
+  r = toxav_send_audio(toxav, f->av.num, f->av.payload, payloadsize);
+      ^
+ratox.c: In function ‘cbconnstatus’:
+ratox.c:567:6: warning: implicit declaration of function ‘tox_get_name’ [-Wimplicit-function-declaration]
+  r = tox_get_name(tox, frnum, (uint8_t *)name);
+      ^
+ratox.c: In function ‘cbfilecontrol’:
+ratox.c:736:7: error: ‘TOX_FILECONTROL_ACCEPT’ undeclared (first use in this function)
+  case TOX_FILECONTROL_ACCEPT:
+       ^
+ratox.c:736:7: note: each undeclared identifier is reported only once for each function it appears in
+ratox.c:743:21: warning: implicit declaration of function ‘tox_file_data_size’ [-Wimplicit-function-declaration]
+     f->tx.chunksz = tox_file_data_size(tox, fnum);
+                     ^
+ratox.c:754:7: error: ‘TOX_FILECONTROL_PAUSE’ undeclared (first use in this function)
+  case TOX_FILECONTROL_PAUSE:
+       ^
+ratox.c:762:7: error: ‘TOX_FILECONTROL_KILL’ undeclared (first use in this function)
+  case TOX_FILECONTROL_KILL:
+       ^
+ratox.c:777:7: error: ‘TOX_FILECONTROL_FINISHED’ undeclared (first use in this function)
+  case TOX_FILECONTROL_FINISHED:
+       ^
+ratox.c:788:8: warning: implicit declaration of function ‘tox_file_send_control’ [-Wimplicit-function-declaration]
+    if (tox_file_send_control(tox, f->num, 1, 0, TOX_FILECONTROL_FINISHED, NULL, 0) < 0)
+        ^
+ratox.c: In function ‘cbfilesendreq’:
+ratox.c:825:51: error: ‘TOX_FILECONTROL_KILL’ undeclared (first use in this function)
+   if (tox_file_send_control(tox, f->num, 1, fnum, TOX_FILECONTROL_KILL, NULL, 0) < 0)
+                                                   ^
+ratox.c: In function ‘canceltxtransfer’:
+ratox.c:874:47: error: ‘TOX_FILECONTROL_KILL’ undeclared (first use in this function)
+  if (tox_file_send_control(tox, f->num, 0, 0, TOX_FILECONTROL_KILL, NULL, 0) < 0)
+                                               ^
+ratox.c: In function ‘cancelrxtransfer’:
+ratox.c:891:47: error: ‘TOX_FILECONTROL_KILL’ undeclared (first use in this function)
+  if (tox_file_send_control(tox, f->num, 1, 0, TOX_FILECONTROL_KILL, NULL, 0) < 0)
+                                               ^
+ratox.c: In function ‘sendfriendfile’:
+ratox.c:910:44: warning: implicit declaration of function ‘interval’ [-Wimplicit-function-declaration]
+  while (diff.tv_sec == 0 && diff.tv_nsec < interval(tox, toxav) * 1E6) {
+                                            ^
+ratox.c:913:8: warning: implicit declaration of function ‘tox_file_send_data’ [-Wimplicit-function-declaration]
+    if (tox_file_send_data(tox, f->num, f->tx.fnum, f->tx.buf, f->tx.n) < 0) {
+        ^
+ratox.c:926:9: error: ‘TOX_FILECONTROL_FINISHED’ undeclared (first use in this function)
+         TOX_FILECONTROL_FINISHED, NULL, 0) < 0)
+         ^
+ratox.c: In function ‘sendfriendtext’:
+ratox.c:961:6: warning: implicit declaration of function ‘tox_send_message’ [-Wimplicit-function-declaration]
+  r = tox_send_message(tox, f->num, buf, n);
+      ^
+ratox.c: In function ‘removefriend’:
+ratox.c:973:2: warning: implicit declaration of function ‘tox_del_friend’ [-Wimplicit-function-declaration]
+  tox_del_friend(tox, f->num);
+  ^
+ratox.c: In function ‘dataload’:
+ratox.c:1038:6: warning: implicit declaration of function ‘tox_is_save_encrypted’ [-Wimplicit-function-declaration]
+  if (tox_is_save_encrypted(data)) {
+      ^
+ratox.c:1042:10: warning: implicit declaration of function ‘tox_encrypted_load’ [-Wimplicit-function-declaration]
+          tox_encrypted_load(tox, data, sz, passphrase, pplen) < 0);
+          ^
+ratox.c:1044:7: warning: implicit declaration of function ‘tox_load’ [-Wimplicit-function-declaration]
+   if (tox_load(tox, data, sz) < 0)
+       ^
+ratox.c: In function ‘datasave’:
+ratox.c:1075:25: warning: implicit declaration of function ‘tox_encrypted_size’ [-Wimplicit-function-declaration]
+  sz = encryptsavefile ? tox_encrypted_size(tox) : tox_size(tox);
+                         ^
+ratox.c:1075:51: warning: implicit declaration of function ‘tox_size’ [-Wimplicit-function-declaration]
+  sz = encryptsavefile ? tox_encrypted_size(tox) : tox_size(tox);
+                                                   ^
+ratox.c:1081:3: warning: implicit declaration of function ‘tox_encrypted_save’ [-Wimplicit-function-declaration]
+   tox_encrypted_save(tox, data, passphrase, pplen);
+   ^
+ratox.c:1083:3: warning: implicit declaration of function ‘tox_save’ [-Wimplicit-function-declaration]
+   tox_save(tox, data);
+   ^
+ratox.c: In function ‘localinit’:
+ratox.c:1099:18: error: ‘TOX_FRIEND_ADDRESS_SIZE’ undeclared (first use in this function)
+  uint8_t address[TOX_FRIEND_ADDRESS_SIZE];
+                  ^
+ratox.c:1100:17: error: ‘TOX_MAX_STATUSMESSAGE_LENGTH’ undeclared (first use in this function)
+  uint8_t status[TOX_MAX_STATUSMESSAGE_LENGTH + 1];
+                 ^
+ratox.c:1132:6: warning: implicit declaration of function ‘tox_get_self_name’ [-Wimplicit-function-declaration]
+  r = tox_get_self_name(tox, name);
+      ^
+ratox.c:1143:6: warning: implicit declaration of function ‘tox_get_self_status_message’ [-Wimplicit-function-declaration]
+  r = tox_get_self_status_message(tox, status, sizeof(status) - 1);
+      ^
+ratox.c:1154:6: warning: implicit declaration of function ‘tox_get_self_user_status’ [-Wimplicit-function-declaration]
+  r = tox_get_self_user_status(tox);
+      ^
+ratox.c:1170:2: warning: implicit declaration of function ‘tox_get_address’ [-Wimplicit-function-declaration]
+  tox_get_address(tox, address);
+  ^
+ratox.c:1177:44: warning: implicit declaration of function ‘tox_get_nospam’ [-Wimplicit-function-declaration]
+  dprintf(gslots[NOSPAM].fd[OUT], "%08X\n", tox_get_nospam(tox));
+                                            ^
+ratox.c:1100:10: warning: unused variable ‘status’ [-Wunused-variable]
+  uint8_t status[TOX_MAX_STATUSMESSAGE_LENGTH + 1];
+          ^
+ratox.c:1099:10: warning: unused variable ‘address’ [-Wunused-variable]
+  uint8_t address[TOX_FRIEND_ADDRESS_SIZE];
+          ^
+ratox.c: In function ‘toxinit’:
+ratox.c:1185:8: error: request for member ‘ipv6enabled’ in something not a structure or union
+  toxopt.ipv6enabled = ipv6;
+        ^
+ratox.c:1186:8: error: request for member ‘udp_disabled’ in something not a structure or union
+  toxopt.udp_disabled = tcp;
+        ^
+ratox.c:1189:9: error: request for member ‘udp_disabled’ in something not a structure or union
+   toxopt.udp_disabled = tcp;
+         ^
+ratox.c:1191:18: error: request for member ‘proxy_address’ in something not a structure or union
+   snprintf(toxopt.proxy_address, sizeof(toxopt.proxy_address),
+                  ^
+ratox.c:1191:47: error: request for member ‘proxy_address’ in something not a structure or union
+   snprintf(toxopt.proxy_address, sizeof(toxopt.proxy_address),
+                                               ^
+ratox.c:1193:9: error: request for member ‘proxy_port’ in something not a structure or union
+   toxopt.proxy_port = proxyport;
+         ^
+ratox.c:1194:9: error: request for member ‘proxy_type’ in something not a structure or union
+   toxopt.proxy_type = proxytype;
+         ^
+ratox.c:1198:16: warning: passing argument 1 of ‘tox_new’ from incompatible pointer type [-Wincompatible-pointer-types]
+  tox = tox_new(&toxopt);
+                ^
+In file included from ratox.c:20:0:
+/usr/include/tox/tox.h:632:6: note: expected ‘const struct Tox_Options *’ but argument is of type ‘int *’
+ Tox *tox_new(const struct Tox_Options *options, TOX_ERR_NEW *error);
+      ^
+ratox.c:1198:8: error: too few arguments to function ‘tox_new’
+  tox = tox_new(&toxopt);
+        ^
+In file included from ratox.c:20:0:
+/usr/include/tox/tox.h:632:6: note: declared here
+ Tox *tox_new(const struct Tox_Options *options, TOX_ERR_NEW *error);
+      ^
+In file included from ratox.c:47:0:
+config.h:10:18: warning: passing argument 2 of ‘toxav_new’ makes pointer from integer without a cast [-Wint-conversion]
+ #define MAXCALLS 8
+                  ^
+ratox.c:1205:25: note: in expansion of macro ‘MAXCALLS’
+  toxav = toxav_new(tox, MAXCALLS);
+                         ^
+In file included from ratox.c:21:0:
+/usr/include/tox/toxav.h:194:8: note: expected ‘TOXAV_ERR_NEW * {aka enum TOXAV_ERR_NEW *}’ but argument is of type ‘int’
+ ToxAV *toxav_new(Tox *tox, TOXAV_ERR_NEW *error);
+        ^
+ratox.c:1205:8: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  toxav = toxav_new(tox, MAXCALLS);
+        ^
+ratox.c:1209:16: error: ‘av_DefaultSettings’ undeclared (first use in this function)
+  toxavconfig = av_DefaultSettings;
+                ^
+ratox.c:1210:26: error: request for member ‘audio_sample_rate’ in something not a structure or union
+  framesize = (toxavconfig.audio_sample_rate * toxavconfig.audio_frame_duration *
+                          ^
+ratox.c:1210:58: error: request for member ‘audio_frame_duration’ in something not a structure or union
+  framesize = (toxavconfig.audio_sample_rate * toxavconfig.audio_frame_duration *
+                                                          ^
+ratox.c:1211:19: error: request for member ‘audio_channels’ in something not a structure or union
+        toxavconfig.audio_channels) / 1000;
+                   ^
+ratox.c:1213:2: warning: implicit declaration of function ‘tox_callback_connection_status’ [-Wimplicit-function-declaration]
+  tox_callback_connection_status(tox, cbconnstatus, NULL);
+  ^
+ratox.c:1214:35: warning: passing argument 2 of ‘tox_callback_friend_message’ from incompatible pointer type [-Wincompatible-pointer-types]
+  tox_callback_friend_message(tox, cbfriendmessage, NULL);
+                                   ^
+In file included from ratox.c:20:0:
+/usr/include/tox/tox.h:1570:6: note: expected ‘void (*)(Tox *, uint32_t,  TOX_MESSAGE_TYPE,  const uint8_t *, size_t,  void *) {aka void (*)(struct Tox *, unsigned int,  enum TOX_MESSAGE_TYPE,  const unsigned char *, long unsigned int,  void *)}’ but argument is of type ‘void (*)(Tox *, int32_t,  const uint8_t *, uint16_t,  void *) {aka void (*)(struct Tox *, int,  const unsigned char *, short unsigned int,  void *)}’
+ void tox_callback_friend_message(Tox *tox, tox_friend_message_cb *callback, void *user_data);
+      ^
+ratox.c:1215:35: warning: passing argument 2 of ‘tox_callback_friend_request’ from incompatible pointer type [-Wincompatible-pointer-types]
+  tox_callback_friend_request(tox, cbfriendrequest, NULL);
+                                   ^
+In file included from ratox.c:20:0:
+/usr/include/tox/tox.h:1551:6: note: expected ‘void (*)(Tox *, const uint8_t *, const uint8_t *, size_t,  void *) {aka void (*)(struct Tox *, const unsigned char *, const unsigned char *, long unsigned int,  void *)}’ but argument is of type ‘void (*)(Tox *, const uint8_t *, const uint8_t *, uint16_t,  void *) {aka void (*)(struct Tox *, const unsigned char *, const unsigned char *, short unsigned int,  void *)}’
+ void tox_callback_friend_request(Tox *tox, tox_friend_request_cb *callback, void *user_data);
+      ^
+ratox.c:1216:2: warning: implicit declaration of function ‘tox_callback_name_change’ [-Wimplicit-function-declaration]
+  tox_callback_name_change(tox, cbnamechange, NULL);
+  ^
+ratox.c:1217:2: warning: implicit declaration of function ‘tox_callback_status_message’ [-Wimplicit-function-declaration]
+  tox_callback_status_message(tox, cbstatusmessage, NULL);
+  ^
+ratox.c:1218:2: warning: implicit declaration of function ‘tox_callback_user_status’ [-Wimplicit-function-declaration]
+  tox_callback_user_status(tox, cbuserstate, NULL);
+  ^
+ratox.c:1219:2: warning: implicit declaration of function ‘tox_callback_file_control’ [-Wimplicit-function-declaration]
+  tox_callback_file_control(tox, cbfilecontrol, NULL);
+  ^
+ratox.c:1220:2: warning: implicit declaration of function ‘tox_callback_file_send_request’ [-Wimplicit-function-declaration]
+  tox_callback_file_send_request(tox, cbfilesendreq, NULL);
+  ^
+ratox.c:1221:2: warning: implicit declaration of function ‘tox_callback_file_data’ [-Wimplicit-function-declaration]
+  tox_callback_file_data(tox, cbfiledata, NULL);
+  ^
+ratox.c:1223:2: warning: implicit declaration of function ‘toxav_register_callstate_callback’ [-Wimplicit-function-declaration]
+  toxav_register_callstate_callback(toxav, cbcallinvite, av_OnInvite, NULL);
+  ^
+ratox.c:1223:57: error: ‘av_OnInvite’ undeclared (first use in this function)
+  toxav_register_callstate_callback(toxav, cbcallinvite, av_OnInvite, NULL);
+                                                         ^
+ratox.c:1224:56: error: ‘av_OnStart’ undeclared (first use in this function)
+  toxav_register_callstate_callback(toxav, cbcallstart, av_OnStart, NULL);
+                                                        ^
+ratox.c:1225:60: error: ‘av_OnEnd’ undeclared (first use in this function)
+  toxav_register_callstate_callback(toxav, cbcallterminate, av_OnEnd, "Ended");
+                                                            ^
+ratox.c:1226:60: error: ‘av_OnCancel’ undeclared (first use in this function)
+  toxav_register_callstate_callback(toxav, cbcallterminate, av_OnCancel, "Cancelled");
+                                                            ^
+ratox.c:1227:60: error: ‘av_OnReject’ undeclared (first use in this function)
+  toxav_register_callstate_callback(toxav, cbcallterminate, av_OnReject, "Rejected");
+                                                            ^
+ratox.c:1229:60: error: ‘av_OnRequestTimeout’ undeclared (first use in this function)
+  toxav_register_callstate_callback(toxav, cbcallterminate, av_OnRequestTimeout, "Request timeout");
+                                                            ^
+ratox.c:1230:60: error: ‘av_OnPeerTimeout’ undeclared (first use in this function)
+  toxav_register_callstate_callback(toxav, cbcallterminate, av_OnPeerTimeout, "Peer timeout");
+                                                            ^
+ratox.c:1231:61: error: ‘av_OnPeerCSChange’ undeclared (first use in this function)
+  toxav_register_callstate_callback(toxav, cbcalltypechange, av_OnPeerCSChange, NULL);
+                                                             ^
+ratox.c:1232:61: error: ‘av_OnSelfCSChange’ undeclared (first use in this function)
+  toxav_register_callstate_callback(toxav, cbcalltypechange, av_OnSelfCSChange, NULL);
+                                                             ^
+ratox.c:1234:2: warning: implicit declaration of function ‘toxav_register_audio_callback’ [-Wimplicit-function-declaration]
+  toxav_register_audio_callback(toxav, cbcalldata, NULL);
+  ^
+ratox.c: In function ‘toxconnect’:
+ratox.c:1263:7: warning: implicit declaration of function ‘tox_bootstrap_from_address’ [-Wimplicit-function-declaration]
+   r = tox_bootstrap_from_address(tox, ipv6 ? n->addr6 : n->addr4, n->port, id);
+       ^
+ratox.c:1246:10: warning: unused variable ‘id’ [-Wunused-variable]
+  uint8_t id[TOX_CLIENT_ID_SIZE];
+          ^
+ratox.c: In function ‘friendcreate’:
+ratox.c:1302:17: error: ‘TOX_MAX_STATUSMESSAGE_LENGTH’ undeclared (first use in this function)
+  uint8_t status[TOX_MAX_STATUSMESSAGE_LENGTH + 1];
+                 ^
+ratox.c:1319:2: warning: implicit declaration of function ‘tox_get_client_id’ [-Wimplicit-function-declaration]
+  tox_get_client_id(tox, f->num, f->id);
+  ^
+ratox.c:1351:3: warning: implicit declaration of function ‘tox_get_friend_connection_status’ [-Wimplicit-function-declaration]
+   tox_get_friend_connection_status(tox, frnum));
+   ^
+ratox.c:1354:6: warning: implicit declaration of function ‘tox_get_status_message’ [-Wimplicit-function-declaration]
+  r = tox_get_status_message(tox, frnum, status, sizeof(status) - 1);
+      ^
+ratox.c:1366:6: warning: implicit declaration of function ‘tox_get_user_status’ [-Wimplicit-function-declaration]
+  r = tox_get_user_status(tox, frnum);
+      ^
+ratox.c:1302:10: warning: unused variable ‘status’ [-Wunused-variable]
+  uint8_t status[TOX_MAX_STATUSMESSAGE_LENGTH + 1];
+          ^
+ratox.c: In function ‘frienddestroy’:
+ratox.c:1398:25: warning: implicit declaration of function ‘toxav_get_call_state’ [-Wimplicit-function-declaration]
+  if (f->av.num != -1 && toxav_get_call_state(toxav, f->av.num) != av_CallNonExistent)
+                         ^
+ratox.c:1398:67: error: ‘av_CallNonExistent’ undeclared (first use in this function)
+  if (f->av.num != -1 && toxav_get_call_state(toxav, f->av.num) != av_CallNonExistent)
+                                                                   ^
+ratox.c: In function ‘friendload’:
+ratox.c:1418:7: warning: implicit declaration of function ‘tox_count_friendlist’ [-Wimplicit-function-declaration]
+  sz = tox_count_friendlist(tox);
+       ^
+ratox.c:1423:2: warning: implicit declaration of function ‘tox_get_friendlist’ [-Wimplicit-function-declaration]
+  tox_get_friendlist(tox, frnums, sz);
+  ^
+ratox.c: In function ‘setname’:
+ratox.c:1445:6: warning: implicit declaration of function ‘tox_set_name’ [-Wimplicit-function-declaration]
+  r = tox_set_name(tox, (uint8_t *)name, n);
+      ^
+ratox.c: In function ‘setstatus’:
+ratox.c:1462:17: error: ‘TOX_MAX_STATUSMESSAGE_LENGTH’ undeclared (first use in this function)
+  uint8_t status[TOX_MAX_STATUSMESSAGE_LENGTH + 1];
+                 ^
+ratox.c:1471:6: warning: implicit declaration of function ‘tox_set_status_message’ [-Wimplicit-function-declaration]
+  r = tox_set_status_message(tox, status, n);
+      ^
+ratox.c:1462:10: warning: unused variable ‘status’ [-Wunused-variable]
+  uint8_t status[TOX_MAX_STATUSMESSAGE_LENGTH + 1];
+          ^
+ratox.c: In function ‘setuserstate’:
+ratox.c:1499:4: warning: implicit declaration of function ‘tox_set_user_status’ [-Wimplicit-function-declaration]
+    tox_set_user_status(tox, i);
+    ^
+ratox.c: In function ‘sendfriendreq’:
+ratox.c:1524:13: error: ‘TOX_FRIEND_ADDRESS_SIZE’ undeclared (first use in this function)
+  uint8_t id[TOX_FRIEND_ADDRESS_SIZE];
+             ^
+ratox.c:1554:6: warning: implicit declaration of function ‘tox_add_friend’ [-Wimplicit-function-declaration]
+  r = tox_add_friend(tox, id, (uint8_t *)msg, strlen(msg));
+      ^
+ratox.c:1524:10: warning: unused variable ‘id’ [-Wunused-variable]
+  uint8_t id[TOX_FRIEND_ADDRESS_SIZE];
+          ^
+ratox.c: In function ‘setnospam’:
+ratox.c:1573:19: error: ‘TOX_FRIEND_ADDRESS_SIZE’ undeclared (first use in this function)
+  uint8_t  address[TOX_FRIEND_ADDRESS_SIZE];
+                   ^
+ratox.c:1591:2: warning: implicit declaration of function ‘tox_set_nospam’ [-Wimplicit-function-declaration]
+  tox_set_nospam(tox, nsval);
+  ^
+ratox.c:1573:11: warning: unused variable ‘address’ [-Wunused-variable]
+  uint8_t  address[TOX_FRIEND_ADDRESS_SIZE];
+           ^
+ratox.c: In function ‘loop’:
+ratox.c:1626:7: warning: implicit declaration of function ‘tox_isconnected’ [-Wimplicit-function-declaration]
+   if (tox_isconnected(tox)) {
+       ^
+ratox.c:1647:3: warning: implicit declaration of function ‘tox_do’ [-Wimplicit-function-declaration]
+   tox_do(tox);
+   ^
+ratox.c:1648:3: warning: implicit declaration of function ‘toxav_do’ [-Wimplicit-function-declaration]
+   toxav_do(toxav);
+   ^
+ratox.c:1681:52: error: ‘av_CallActive’ undeclared (first use in this function)
+         (toxav_get_call_state(toxav, f->av.num) == av_CallActive &&
+                                                    ^
+ratox.c:1744:49: error: ‘TOX_FILECONTROL_ACCEPT’ undeclared (first use in this function)
+    if (tox_file_send_control(tox, f->num, 1, 0, TOX_FILECONTROL_ACCEPT, NULL, 0) < 0) {
+                                                 ^
+ratox.c:1772:9: error: ‘av_CallStarting’ undeclared (first use in this function)
+    case av_CallStarting:
+         ^
+ratox.c:1775:22: warning: passing argument 1 of ‘toxav_answer’ from incompatible pointer type [-Wincompatible-pointer-types]
+     r = toxav_answer(toxav, f->av.num, &toxavconfig);
+                      ^
+In file included from ratox.c:21:0:
+/usr/include/tox/toxav.h:344:6: note: expected ‘ToxAV * {aka struct ToxAV *}’ but argument is of type ‘int *’
+ bool toxav_answer(ToxAV *toxAV, uint32_t friend_number, uint32_t audio_bit_rate, uint32_t video_bit_rate,
+      ^
+ratox.c:1775:40: warning: passing argument 3 of ‘toxav_answer’ makes integer from pointer without a cast [-Wint-conversion]
+     r = toxav_answer(toxav, f->av.num, &toxavconfig);
+                                        ^
+In file included from ratox.c:21:0:
+/usr/include/tox/toxav.h:344:6: note: expected ‘uint32_t {aka unsigned int}’ but argument is of type ‘int *’
+ bool toxav_answer(ToxAV *toxAV, uint32_t friend_number, uint32_t audio_bit_rate, uint32_t video_bit_rate,
+      ^
+ratox.c:1775:9: error: too few arguments to function ‘toxav_answer’
+     r = toxav_answer(toxav, f->av.num, &toxavconfig);
+         ^
+In file included from ratox.c:21:0:
+/usr/include/tox/toxav.h:344:6: note: declared here
+ bool toxav_answer(ToxAV *toxAV, uint32_t friend_number, uint32_t audio_bit_rate, uint32_t video_bit_rate,
+      ^
+ratox.c:1815:8: warning: implicit declaration of function ‘tox_add_friend_norequest’ [-Wimplicit-function-declaration]
+    r = tox_add_friend_norequest(tox, req->id);
+        ^
+ratox.c:1845:10: warning: implicit declaration of function ‘tox_new_file_sender’ [-Wimplicit-function-declaration]
+      if (tox_new_file_sender(tox, f->num,
+          ^
+ratox.c:1861:10: error: ‘av_CallNonExistent’ undeclared (first use in this function)
+     case av_CallNonExistent:
+          ^
+ratox.c:1862:21: warning: passing argument 1 of ‘toxav_call’ from incompatible pointer type [-Wincompatible-pointer-types]
+      r = toxav_call(toxav, &f->av.num, f->num, &toxavconfig, RINGINGDELAY);
+                     ^
+In file included from ratox.c:21:0:
+/usr/include/tox/toxav.h:282:6: note: expected ‘ToxAV * {aka struct ToxAV *}’ but argument is of type ‘int *’
+ bool toxav_call(ToxAV *toxAV, uint32_t friend_number, uint32_t audio_bit_rate,
+      ^
+ratox.c:1862:28: warning: passing argument 2 of ‘toxav_call’ makes integer from pointer without a cast [-Wint-conversion]
+      r = toxav_call(toxav, &f->av.num, f->num, &toxavconfig, RINGINGDELAY);
+                            ^
+In file included from ratox.c:21:0:
+/usr/include/tox/toxav.h:282:6: note: expected ‘uint32_t {aka unsigned int}’ but argument is of type ‘int *’
+ bool toxav_call(ToxAV *toxAV, uint32_t friend_number, uint32_t audio_bit_rate,
+      ^
+ratox.c:1862:48: warning: passing argument 4 of ‘toxav_call’ makes integer from pointer without a cast [-Wint-conversion]
+      r = toxav_call(toxav, &f->av.num, f->num, &toxavconfig, RINGINGDELAY);
+                                                ^
+In file included from ratox.c:21:0:
+/usr/include/tox/toxav.h:282:6: note: expected ‘uint32_t {aka unsigned int}’ but argument is of type ‘int *’
+ bool toxav_call(ToxAV *toxAV, uint32_t friend_number, uint32_t audio_bit_rate,
+      ^
+In file included from ratox.c:47:0:
+config.h:7:22: warning: passing argument 5 of ‘toxav_call’ makes pointer from integer without a cast [-Wint-conversion]
+ #define RINGINGDELAY 16
+                      ^
+ratox.c:1862:62: note: in expansion of macro ‘RINGINGDELAY’
+      r = toxav_call(toxav, &f->av.num, f->num, &toxavconfig, RINGINGDELAY);
+                                                              ^
+In file included from ratox.c:21:0:
+/usr/include/tox/toxav.h:282:6: note: expected ‘TOXAV_ERR_CALL * {aka enum TOXAV_ERR_CALL *}’ but argument is of type ‘int’
+ bool toxav_call(ToxAV *toxAV, uint32_t friend_number, uint32_t audio_bit_rate,
+      ^
+ratox.c: In function ‘shutdown’:
+ratox.c:1939:13: warning: passing argument 1 of ‘toxav_kill’ from incompatible pointer type [-Wincompatible-pointer-types]
+  toxav_kill(toxav);
+             ^
+In file included from ratox.c:21:0:
+/usr/include/tox/toxav.h:203:6: note: expected ‘ToxAV * {aka struct ToxAV *}’ but argument is of type ‘int *’
+ void toxav_kill(ToxAV *toxAV);
+      ^
+Makefile:35: recipe for target 'ratox.o' failed
+make[1]: *** [ratox.o] Error 1
+make[1]: Leaving directory '/home/dyngar/Projects/Distro_OS_Projects/packages/ratox'
+Makefile:20: recipe for target 'binlib' failed
+make: *** [binlib] Error 2

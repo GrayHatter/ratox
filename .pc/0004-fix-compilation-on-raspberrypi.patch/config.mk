@@ -9,4 +9,4 @@ CC = cc
 LD = $(CC)
 CPPFLAGS = -DVERSION=\"${VERSION}\"
 CFLAGS   = -g -I/usr/include -Wall -Wunused $(CPPFLAGS) $(shell dpkg-buildflags --get CFLAGS)
-LDFLAGS  = -g -L/usr/lib -ltoxcore -ltoxav -ltoxencryptsave -lrt $(shell dpkg-buildflags --get LDFLAGS)
+LDFLAGS  = -g -L/usr/lib -ltoxcore -ltoxav -ltoxencryptsave $(shell dpkg-buildflags --get LDFLAGS)

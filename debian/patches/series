@@ -2,5 +2,3 @@
 0002-default-tor-proxy.patch
 0003-custom-manpage.patch
 0004-fix-compilation-on-raspberrypi.patch
-update-new-api
-incremented-version-number

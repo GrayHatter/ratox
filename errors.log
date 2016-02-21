@@ -1,8 +1,0 @@
-CC eprintf.c
-CC readpassphrase.c
-AR util.a
-make bin
-make[1]: Entering directory '/home/dyngar/Projects/Distro_OS_Projects/packages/ratox'
-CC ratox.c
-LD ratox
-make[1]: Leaving directory '/home/dyngar/Projects/Distro_OS_Projects/packages/ratox'

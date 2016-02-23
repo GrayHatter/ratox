@@ -1,0 +1,5 @@
+eprintf.o
+ratox
+ratox.o
+readpassphrase.o
+util.a

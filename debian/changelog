@@ -1,0 +1,6 @@
+ratox (20160221-1) unstable; urgency=low
+  * Updated to new Tox API
+  * Disabled AV API temporarily
+  
+
+ -- dyngar <cmotc@openmailbox.org>  Sun, 21 Feb 2016 01:32:35 -0500

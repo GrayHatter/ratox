@@ -1,0 +1,18 @@
+Description: create nightly orig file
+ create an orig.tar.gz
+ .
+ ratox (20160221-1) unstable; urgency=low
+ .
+   * Updated to new Tox API
+   * Disabled AV API temporarily
+Author: idk <cmotc@openmailbox.org>
+
+--- ratox-20160221.orig/debian.sh
++++ ratox-20160221/debian.sh
+@@ -1,5 +1,6 @@
+ #! /bin/sh
+ cd ratox
++tar -cJf ../ratox-$(date +%Y%m%d) .
+ mkdir ../ratox-$(date +%Y%m%d)
+ cp * ratox-$(date +%Y%m%d)/*
+ cd ratox-$(date +%Y%m%d)

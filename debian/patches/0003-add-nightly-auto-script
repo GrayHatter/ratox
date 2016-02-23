@@ -1,0 +1,26 @@
+Description: nightly build script
+ simple script builds package with date based versioning
+ .
+ ratox (20160221-1) unstable; urgency=low
+ .
+   * Updated to new Tox API
+   * Disabled AV API temporarily
+Author: idk <cmotc@openmailbox.org>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin:
+
+--- /dev/null
++++ ratox-20160221/debian.sh
+@@ -0,0 +1,6 @@
++#! /bin/sh
++cd ratox
++mkdir ../ratox-$(date +%Y%m%d)
++cp * ratox-$(date +%Y%m%d)/*
++cd ratox-$(date +%Y%m%d)
++debuild -us -uc
+\ No newline at end of file

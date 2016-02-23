@@ -1,10 +1,8 @@
 # ratox version
-VERSION = 0.2.1
-
+VERSION = 0.2.2
 # paths
 PREFIX = /usr
 MANPREFIX = $(PREFIX)/share/man
-
 CC = cc
 LD = $(CC)
 CPPFLAGS = -DVERSION=\"${VERSION}\"

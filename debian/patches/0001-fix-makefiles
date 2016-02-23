@@ -1,0 +1,33 @@
+Description: prepare config.mk for building on debian
+ clone kytv's patches for building debian packages
+ .
+ ratox (20160221-1) unstable; urgency=low
+ .
+Author: cmotc <cmotc@openmailbox.org>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: https://github.com/cmotc/ratox/
+Last-Update: 2016-2-21
+
+--- ratox-20160221.orig/config.mk
++++ ratox-20160221/config.mk
+@@ -2,11 +2,11 @@
+ VERSION = 0.2.2
+ 
+ # paths
+-PREFIX = /usr/local
++PREFIX = /usr
+ MANPREFIX = $(PREFIX)/share/man
+ 
+ CC = cc
+ LD = $(CC)
+ CPPFLAGS = -DVERSION=\"${VERSION}\"
+-CFLAGS   = -g -I/usr/local/include -Wall -Wunused $(CPPFLAGS)
+-LDFLAGS  = -g -L/usr/local/lib -ltoxcore -ltoxav -ltoxencryptsave
+\ No newline at end of file
++CFLAGS   = -g -I/usr/include -Wall -Wunused $(CPPFLAGS) $(shell dpkg-buildflags --get CFLAGS)
++LDFLAGS  = -g -L/usr/lib -ltoxcore -ltoxav -ltoxencryptsave -lrt $(shell dpkg-buildflags --get LDFLAGS)

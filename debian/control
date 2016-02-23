@@ -1,5 +1,6 @@
 Source: ratox
 Section: net
+Architecture: Source
 Priority: optional
 Maintainer: dyngar <cmotc@openmailbox.org>
 Build-Depends: debhelper (>= 9)

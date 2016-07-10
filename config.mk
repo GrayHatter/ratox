@@ -2,7 +2,7 @@
 VERSION = 0.2.1
 
 # paths
-PREFIX = /usr/local
+PREFIX = /usr/
 MANPREFIX = $(PREFIX)/share/man
 
 CC = cc

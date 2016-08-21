@@ -14,6 +14,8 @@ OBJ = $(SRC:.c=.o) $(LIB)
 BIN = $(SRC:.c=)
 MAN = $(SRC:.c=.1)
 
+LDFLAGS += $(shell pkg-config --libs libtoxcore libtoxav libsodium vpx)
+
 all: binlib
 
 binlib: util.a

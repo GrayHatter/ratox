@@ -85,7 +85,7 @@ to help explain the semantics of the individual files.
 
 Features
 ========
-
+```
 1 v 1 messaging: Yes
 File transfer: Yes
 Group chat: No
@@ -116,7 +116,7 @@ toxi URI: No
 NOTE: Some of these features are not intended to be developed
 in ratox itself but rather in external scripts[1] that are built upon
 ratox.
-
+```
 
 Examples
 ========
